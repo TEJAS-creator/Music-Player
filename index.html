@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Audio Element -->
+    <audio src="" id="audio"></audio>
+
+    <!-- Music Player UI -->
+    <div class="music-player">
+      <h1 class="music-name">song 1</h1>
+      <p class="artist-name">artist</p>
+
+      <!-- Disk (with default non-rotating state) -->
+      <div class="disk"></div>
+
+      <!-- Seek Bar & Time Info -->
+      <div class="song-slider">
+        <input type="range" value="0" class="seek-bar" />
+        <span class="current-time">00:00</span>
+        <span class="song-duration">00:00</span>
+      </div>
+
+      <!-- Controls -->
+      <div class="control">
+        <!-- Previous Button -->
+        <button class="control-btn prev-btn">
+          <svg viewBox="0 0 24 24">
+            <path d="M6 12L18 6v12L6 12zm0 0V6H4v12h2V12z" />
+          </svg>
+        </button>
+
+        <!-- Play/Pause Button -->
+        <div class="play-btn">
+          <span></span>
+        </div>
+
+        <!-- Next Button -->
+        <button class="control-btn next-btn">
+          <svg viewBox="0 0 24 24">
+            <path d="M6 18V6l12 6-12 6zm12 0h2V6h-2v12z" />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+  </body>
+</html>
